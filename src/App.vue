@@ -3,17 +3,15 @@
 <template>
   <div class="container">
     <div class="wrapper">
-      <div style="margin-bottom: 16px" class="btn">Vaše klientela</div>
+      <div class="btn mb-4">Vaše klientela</div>
       <h2>Více zákazníků</h2>
-      <h2 style="margin-bottom: 16px">Větší tržby</h2>
-      <p style="margin-bottom: 24px">
+      <h2 class="mb-4">Větší tržby</h2>
+      <p class="mb-6">
         Zvyšte viditelnost vašeho salonu! Díky online profilu a snadné správě
         rezervací <b>zvýšíte vaše tržby, přilákáte nové zákazníky</b> a budete
         mít o všem lepší přehled.
       </p>
-      <div style="margin-bottom: 48px" class="btn--fullwidth">
-        Registrovat salon
-      </div>
+      <div class="btn--fullwidth mb-12">Registrovat salon</div>
     </div>
     <div class="img-container">
       <img src="./assets/small_image.png" alt="" />
@@ -27,7 +25,7 @@
   width: 100%;
 }
 .btn {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #520dc2;
   width: fit-content;
   padding: 12px 8px;
   color: white;
@@ -60,7 +58,9 @@ p {
   width: 100%;
   /* background-color: bisque; */
   display: flex;
+  border-top-left-radius: 12px;
   justify-content: end;
+  overflow: hidden;
 }
 
 .img-container img {
@@ -77,6 +77,8 @@ p {
 @media screen and (min-width: 700px) {
   body {
     padding: 116px 0 116px 88px;
+    min-height: 100vh;
+    overflow: hidden;
   }
 
   .btn--fullwidth {
