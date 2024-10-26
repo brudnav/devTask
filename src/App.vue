@@ -66,13 +66,15 @@ p {
 .img-container img {
   content: url("./assets/small_image.png");
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .wrapper {
   padding-right: 20px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 700px) {
   body {
     padding: 116px 0 116px 88px;
   }
@@ -94,11 +96,16 @@ p {
   .img-container {
     position: relative;
     top: -40px;
+    max-width: 100%;
+    min-width: 412px;
+    max-height: 450px;
   }
 
   .img-container img {
     content: url("./assets/large_image.png");
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .wrapper {
